@@ -18,13 +18,13 @@ public class Atmosphere
     private boolean hasClouds;
 
     /**
-     * El constructor de la clase Atmosphere inicializa todos los atributos y se asegura que se validen correctamete
-     * @param composition       composición de la atmósfera
-     * @param lastObservation   fecha de la ultima observación registrada
-     * @param airQuality        calidad del aire
-     * @param pressure          presión atmosférica
-     * @param density           densidad del aire
-     * @param hasClouds         indica si hay presencia de nubes
+     * The constructor of the Atmosphere class initializes all attributes and ensures that they are validated correctly
+     * @param composition       atmosphere composition
+     * @param lastObservation   date of the last observation done
+     * @param airQuality        air quality of the atmosphere
+     * @param pressure          atmospheric pressure
+     * @param density           atmospheric density
+     * @param hasClouds
      */
     // Constructor
     public Atmosphere(String composition, LocalDate lastObservation, int airQuality, double pressure, double density, boolean hasClouds)
@@ -43,9 +43,9 @@ public class Atmosphere
     }
 
     /**
-     * Establece la composición de la atmósfera
-     * @param composition                   nueva composición
-     * @throws IllegalArgumentException     lanza una excepción si la composición no es correcta
+     * established the composition of the atmosphere
+     * @param composition                   new composition
+     * @throws IllegalArgumentException     throw an exception if the composition isn't correct
      */
     public void setComposition(String composition)
     {
@@ -61,9 +61,9 @@ public class Atmosphere
     }
 
     /**
-     * Establece la fecha de la última observación
-     * @param lastObservation               la fecha de observación
-     * @throws IllegalArgumentException     lanza una excepción si la fecha no es válida
+     * Established the date of the last observation
+     * @param lastObservation               date of the observation
+     * @throws IllegalArgumentException     throws an exception if the date is not correct at all
      */
     public void setLastObservation(LocalDate lastObservation)
     {
@@ -80,8 +80,8 @@ public class Atmosphere
     }
 
     /**
-     * Establece la calidad del aire
-     * @param airQuality    calidad del aire
+     *
+     * @param airQuality    air quality
      */
     public void setAirQuality(int airQuality)
     {
@@ -105,9 +105,9 @@ public class Atmosphere
     }
 
     /**
-     * Establece la presión atmosférica
-     * @param pressure                      la presión atmosférica
-     * @throws IllegalArgumentException     lanza una excepcion si el valor es negativo
+     * established the atmosphere pressure in the earth
+     * @param pressure                      pressure of the atmosphere
+     * @throws IllegalArgumentException     throws an exception if the date is not correct at all
      */
     public void setPressure(double pressure)
     {
@@ -123,9 +123,9 @@ public class Atmosphere
     }
 
     /**
-     * Establece la densidad de la atmósfera y no puede ser un valor negativo
-     * @param density                       densidad del aire
-     * @throws IllegalArgumentException     lanza una excepcion si el valor es negativo
+     * established the density of the atmosphere, and it can not see the negative value
+     * @param density                       air density
+     * @throws IllegalArgumentException     throws an exception if the value is negative
      */
     public void setDensity(double density)
     {
@@ -140,8 +140,8 @@ public class Atmosphere
     }
 
     /**
-     * Indica si la atmósfera tiene nubes o no
-     * @param hasClouds    true si hay nubes, false si no
+     * idicates if there are clouds in the atmosphere
+     * @param hasClouds    it throws true if there are clouds and otherwise false
      */
     public void setHasClouds(boolean hasClouds)
     {

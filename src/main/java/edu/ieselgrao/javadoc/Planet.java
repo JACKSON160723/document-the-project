@@ -29,14 +29,14 @@ public class Planet
 
     /**
      * Constructor básico de la clase Planet
-     * @param name                      nombre del planeta
-     * @param numberOfMoons             número de lunas
-     * @param mass                      masa del planeta
-     * @param radius                    radio del planeta
-     * @param gravity                   gravedad del planeta
-     * @param lastAlbedoMeasurement     fecha de la última medición de albedo
-     * @param hasRings                  dice si el planeta tiene anillos
-     * @param type                      tipo de planeta
+     * @param name                      name of the planet
+     * @param numberOfMoons             number of moons
+     * @param mass                      mass of the planet
+     * @param radius                    radium  of the planet
+     * @param gravity                   gravity of the planet
+     * @param lastAlbedoMeasurement     date of the last albedo's measure
+     * @param hasRings                  it throws if the planet has rings
+     * @param type                      type of planet
      */
     // Basic constructor
     public Planet(String name, int numberOfMoons, double mass, double radius, double gravity, LocalDate lastAlbedoMeasurement, boolean hasRings, PlanetType type)
@@ -54,21 +54,22 @@ public class Planet
     }
 
     /**
-     * Constructor detallado de la clase Planet, si los datos de la atmósfera no son válidos, se establecerá como null
-     * @param name                      nombre del planeta
-     * @param numberOfMoons             número de lunas
-     * @param mass                      masa del planeta
-     * @param radius                    radio del planeta
-     * @param gravity                   gravedad del planeta
-     * @param lastAlbedoMeasurement     fecha de la última medición de albedo
-     * @param hasRings                  indica si tiene anillos
-     * @param type                      tipo de planeta
-     * @param composition               composición atmosférica
-     * @param lastObservation           fecha de última observación
-     * @param airQuality                calidad de aire
-     * @param pressure                  presión atmosférica
-     * @param density                   densidad atmosférica
-     * @param hasClouds                 indica si hay nubes
+     * Detailed constructor for the Planet class. If the atmospheric data is invalid,
+     * it will be set to null.
+     * @param name                      Name of the planet
+     * @param numberOfMoons             Number of moons
+     * @param mass                      Mass of the planet
+     * @param radius                    Radius of the planet
+     * @param gravity                   Gravity of the planet
+     * @param lastAlbedoMeasurement     Date of the last albedo measurement
+     * @param hasRings                  Indicates whether it has rings
+     * @param type                      Type of planet
+     * @param composition               Atmospheric composition
+     * @param lastObservation           Date of the last observation
+     * @param airQuality                Air quality
+     * @param pressure                  Atmospheric pressure
+     * @param density                   Atmospheric density
+     * @param hasClouds                 Indicates whether there are clouds
      */
     // Detailed constructor with atmosphere
     public Planet(String name, int numberOfMoons, double mass, double radius, double gravity, LocalDate lastAlbedoMeasurement, boolean hasRings, PlanetType type, String composition, LocalDate lastObservation, int airQuality, double pressure, double density, boolean hasClouds)
@@ -99,9 +100,9 @@ public class Planet
     }
 
     /**
-     * Establece el nombre del planeta
-     * @param name                          nombre del planeta
-     * @throws IllegalArgumentException     lanza una excepción si es null o está vacío
+     * established the name using the get
+     * @param name                          name of the earth
+     * @throws IllegalArgumentException     throws an exception if it's null or empty
      */
     public void setName(String name)
     {
@@ -118,9 +119,9 @@ public class Planet
     }
 
     /**
-     * Establece el número de lunas
-     * @param numberOfMoons                 número de lunas
-     * @throws IllegalArgumentException     lanza una excepcion si es negativo
+     * establish number of moons
+     * @param numberOfMoons                 number of moons
+     * @throws IllegalArgumentException     throws an exception if is negative
      */
     public void setNumberOfMoons(int numberOfMoons)
     {
@@ -137,9 +138,9 @@ public class Planet
     }
 
     /**
-     * Establece la masa del planeta
-     * @param mass                          masa en kilogramos
-     * @throws IllegalArgumentException     lanza una excepcion si es menor que la masa mínima permitida
+     * establish the mass of the earth
+     * @param mass                          ,ass in kilograms
+     * @throws IllegalArgumentException     throws an exception if is lower than the accurate weight
      */
     public void setMass(double mass)
     {
@@ -156,9 +157,9 @@ public class Planet
     }
 
     /**
-     * Establece el radio del planeta
-     * @param radius                        radio en kilómetros
-     * @throws IllegalArgumentException     lanza excepción si es menor que 500 km
+     * establish the radium of the earth
+     * @param radius                        radium in kilograms
+     * @throws IllegalArgumentException     throws an exception if is lower than 500 km
      */
     public void setRadius(double radius)
     {
@@ -175,9 +176,9 @@ public class Planet
     }
 
     /**
-     * Establece la gravedad del planeta
-     * @param gravity                       valor de la gravedad
-     * @throws IllegalArgumentException     lanza una excepción si es menor o igual a 0
+     * establish the gravity of the earth
+     * @param gravity                       gravity values
+     * @throws IllegalArgumentException     throws an exception if is lower than 0 or equals
      */
     public void setGravity(double gravity)
     {
@@ -194,9 +195,9 @@ public class Planet
     }
 
     /**
-     * Establece la fecha de la última medición de albedo
-     * @param lastAlbedoMeasurement         fecha de medición
-     * @throws IllegalArgumentException     lanza una excepción si es null o supera la fecha actual
+     * establish the last albedo's measure
+     * @param lastAlbedoMeasurement          measure date
+     * @throws IllegalArgumentException     throws an exception if is null or higher that the current date
      */
     public void setLastAlbedoMeasurement(LocalDate lastAlbedoMeasurement)
     {
@@ -214,8 +215,8 @@ public class Planet
     }
 
     /**
-     * Dice si el planeta tiene anillos
-     * @param hasRings  true si tiene anillos, false si no
+     * tells if the planet has ring
+     * @param hasRings  true if it has rings and false if  it doesn't
      */
     public void setHasRings(boolean hasRings)
     {
@@ -227,13 +228,14 @@ public class Planet
     }
 
     /**
-     * Crea y asigna una atmósfera al planeta y puede lanzar una excepcioń si los datos proporcionados no son válidos
-     * @param composition       composición atmosférica
-     * @param lastObservation   fecha de observación
-     * @param airQuality        calidad del aire
-     * @param pressure          presión atmosférica
-     * @param density           densidad atmosférica
-     * @param hasClouds         presencia de nubes
+     * Creates and assigns an atmosphere to the planet; may throw an exception
+     * if the provided data is invalid.
+     * @param composition       Atmospheric composition
+     * @param lastObservation   Observation date
+     * @param airQuality        Air quality
+     * @param pressure          Atmospheric pressure
+     * @param density           Atmospheric density
+     * @param hasClouds         Presence of clouds
      */
     public void setAtmosphere(String composition, LocalDate lastObservation, int airQuality, double pressure, double density, boolean hasClouds)
     {
@@ -247,9 +249,9 @@ public class Planet
     }
 
     /**
-     * Establece el tipo de planeta
-     * @param type                          tipo de planeta
-     * @throws IllegalArgumentException     lanza una excepción si es null
+     * Sets the planet type.
+     * @param type                          The type of planet
+     * @throws IllegalArgumentException     Throws an exception if the type is null
      */
     public void setType(PlanetType type)
     {
